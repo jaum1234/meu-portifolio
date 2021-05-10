@@ -1,0 +1,126 @@
+
+.chamada__conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 35rem;
+}
+
+.chamada__titulo{
+    color: white ;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 80%;
+    transition: 1s all ease-in-out;
+    animation-name: titulo;
+    animation-duration: 1s;
+}
+
+.chamada__imagem{
+    border: 5px solid rgba(0, 0, 0, 0.486);
+    transition: 0.5s all ease-in-out;
+   position: relative;
+}
+
+
+.chamada__imagem:hover{
+    border: 5px solid rgb(250, 0, 0);
+    transform: scale(1.1);
+    filter: blur(1.5px);
+}
+
+.chamada__imagem--texto{
+    position: absolute;
+    top: 50%;
+}
+
+main  p{
+    font-size: 1.2rem;
+    color: white;
+    opacity: 70%;
+    text-transform: lowercase;
+    transition: 1s all ease-in-out;
+    font-family: 'Roboto Mono',  monospace;
+    animation-name: copyright;
+    animation-duration: 1s;
+}
+
+.rodape{
+    width: 50%;
+    margin: 5rem auto; 
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    opacity: 70%;
+    text-transform: lowercase;
+    animation-name: rodape;
+    animation-duration: 1s;
+}
+
+.rodape__lista{
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2rem;
+    transition: 1s all ease-in-out;
+}
+
+.rodape__lista:hover{
+    transform: scale(1.1);
+   
+}
+
+.rodape__imagem{
+    width: 30px;
+}
+
+
+@keyframes titulo{
+
+    0%{
+        opacity: 0;
+        font-size: 3rem;
+    }
+    100%{
+        opacity: 80%;
+        font-size: 2.5rem;
+    }
+
+}
+
+@keyframes copyright{
+
+    0%{
+        opacity: 0;
+        font-size: 1.7rem;
+    }
+    100%{
+        opacity: 70%;
+        font-size: 1.2rem;
+    }
+
+}
+
+@keyframes rodape {
+
+    0%{
+        opacity: 0;
+        width: 10%;
+    }
+
+    100%{
+        opacity: 70%;
+        width: 50%;
+    }
+
+}
+
+
+
+
